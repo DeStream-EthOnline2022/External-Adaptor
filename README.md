@@ -37,6 +37,10 @@ Check the [sls invoke local command documentation](https://www.serverless.com/fr
 
 Copy and replace your `url` - found in Serverless `deploy` command output - and `name` parameter in the following `curl` command in your terminal or in Postman to test your newly deployed application.
 
-```
-curl "https://{base-url}/store?storeId=any22"
+> baseUrl: https://2bgej4zdf8.execute-api.ap-northeast-1.amazonaws.com/dev
+
+```console
+$ curl "https://{$base-url}/store?storeId=any22"
+
+$ curl "https://{$base-url}/store?stores"
 ```
