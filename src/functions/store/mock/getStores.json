@@ -1,0 +1,8 @@
+{
+  "resource": "/",
+  "path": "/stores",
+  "httpMethod": "GET",
+  "requestContext": {
+    "resourceId": "123456"
+  }
+}
