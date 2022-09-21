@@ -40,7 +40,9 @@ Copy and replace your `url` - found in Serverless `deploy` command output - and 
 > baseUrl: https://2bgej4zdf8.execute-api.ap-northeast-1.amazonaws.com/dev
 
 ```console
-$ curl "https://{$base-url}/store?storeId=any22"
+$ curl "https://2bgej4zdf8.execute-api.ap-northeast-1.amazonaws.com/dev/stores"
 
 $ curl "https://{$base-url}/store?stores"
+
+$ curl -X POST -H "Content-Type: application/json" -d '{"squareId":"d3kmadad0", "storeName":"30dreams", "addressLine1":"2910 JAO qupaqupa", "country":"US", "postalCode": "22300"}' "https://{$base-url}/dev/store"
 ```

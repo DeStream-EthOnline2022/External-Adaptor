@@ -40,13 +40,22 @@ const lambdaHandler = async (
     case "POST":
       switch (event.path) {
         case "/store":
-          const store = event.queryStringParameters?.store;
-          if (store == null || !storeData[store]) {
-            return apiResponses._400({
-              message: `Missing store or no data for that store`,
-            });
+          // @ts-ignore
+          const {squareId, storeName,addressLine1,country,postalCode } = event.body;
+          // const store = event.queryStringParameters?.store;
+          const params = {
+            squareId: squareId,
+            storeName: storeName,
+            addressLine1: addressLine1,
+            country: country,
+            postalCode
           }
-          return apiResponses._200({ jobRunID: reqId, data: storeData[store] });
+          // if (store == null || !storeData[store]) {
+          //   return apiResponses._400({
+          //     message: `Missing store or no data for that store`,
+          //   });
+          // }
+          return apiResponses._200({ jobRunID: reqId, data: params });
       }
   }
 };

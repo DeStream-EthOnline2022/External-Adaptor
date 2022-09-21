@@ -1,7 +1,12 @@
 export const newStoreSchema = {
   type: "object",
   properties: {
-    name: { type: "string" },
+    squareId: { type: "string" },
+    storeName: { type: "string" },
+    addressLine1: { type: "string" },
+    country: { type: "string" },
+    postalCode: { type: "string" },
+
   },
-  required: ["name"],
+  required: ["squareId", "storeName", "addressLine1", "country", "postalCode"],
 } as const;

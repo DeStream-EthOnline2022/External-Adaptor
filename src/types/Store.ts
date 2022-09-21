@@ -1,6 +1,13 @@
 export type StoreData = {
-  name: string;
-  state: string;
-  description: string;
-  zipCodes?: string;
+  squareId: string;
+  storeName: string;
+  addressLine1: string;
+  addressLine2: string;
+  addressLine3: string;
+  administrativeDistrictLevel1: string;
+  country: string;
+  locality: string;
+  sublocality: string;
+  postalCode?: string;
 };
+
