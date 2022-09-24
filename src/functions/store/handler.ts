@@ -48,7 +48,7 @@ const lambdaHandler = async (
             storeName: storeName,
             addressLine1: addressLine1,
             country: country,
-            postalCode
+            postalCode: postalCode,
           }
           // if (store == null || !storeData[store]) {
           //   return apiResponses._400({

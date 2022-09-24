@@ -12,10 +12,12 @@
     "node": ">=14.15.0"
   },
   "dependencies": {
+    "@lit-protocol/sdk-nodejs": "^1.1.226",
     "@middy/core": "^3.3.2",
     "@middy/http-error-handler": "^3.3.2",
     "@middy/http-json-body-parser": "^3.3.2",
-    "@middy/validator": "^3.3.2"
+    "@middy/validator": "^3.3.2",
+    "ethers": "^5.7.1"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.0.0",
